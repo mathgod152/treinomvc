@@ -1,5 +1,6 @@
 <?php 
-
+        define('INCLUDE_PATH','http://localhost/mvctreino/' );
+    define('INCLUDE_PATH_FULL','http://localhost/mvctreino/Views/pages/');
     class Application
     {
         public function executar(){

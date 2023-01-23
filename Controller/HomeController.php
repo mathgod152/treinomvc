@@ -1,9 +1,13 @@
 <?php 
 
     namespace Controller;
-    class HomeController{
+    class HomeController extends Controller{
+        public function __construct(){
+            $this->view = new \Views\mainView('Home');
+        }
+
         public function executar(){
-            echo 'HOME';
+            $this->view->render(array('titulo'=>'Home'));
         }
     }
 
